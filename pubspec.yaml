@@ -17,3 +17,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: Prompt
+      fonts:
+        - asset: fonts/Prompt-Regular.ttf
+        - asset: fonts/Prompt-Italic.ttf
+          style: italic
+        - asset: fonts/Prompt-Bold.ttf
+          weight: 700
