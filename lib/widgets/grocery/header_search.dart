@@ -9,9 +9,9 @@ class HeaderSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final searchController = TextEditingController();
-
+    double height = MediaQuery.of(context).size.height;
     return Container(
-      margin: const EdgeInsets.only(left: 28, top: 32),
+      margin: EdgeInsets.only(left: 28, top: height * 0.06),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

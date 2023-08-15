@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenge/main.dart';
+import 'package:flutter_ui_challenge/pages/grocery_categories_page.dart';
 import 'package:flutter_ui_challenge/pages/grocery_main_page.dart';
 import 'package:flutter_ui_challenge/router/route_extension.dart';
 
@@ -13,6 +14,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         routeName: settings.name!,
         screen: const GroceryMainPage(),
         // screen: const GroceryMainPage(params: args),
+      );
+    case Routes.groceryCategoriesPage:
+      return _getPageRoute(
+        routeName: settings.name!,
+        screen: const CategoriesPage(),
       );
     case Routes.home:
       return _getPageRoute(

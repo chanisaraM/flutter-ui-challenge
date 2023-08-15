@@ -20,7 +20,10 @@ class GroceryMainPage extends StatelessWidget {
               Container(
                 height: 300,
                 decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
+                  borderRadius: const BorderRadius.only(
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
+                  ),
                   color: Grocery.primary,
                 ),
                 width: double.infinity,
@@ -54,7 +57,7 @@ class GroceryMainPage extends StatelessWidget {
                     ),
                   ),
                   child: Column(
-                    children: [
+                    children: const [
                       Categories(),
                       Promotion(),
                       Popular(),
